@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <arpa/inet.h>
 
 #ifndef SOCKS5_CLIENT_H
