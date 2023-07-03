@@ -9,7 +9,7 @@
 // https://tools.ietf.org/html/rfc1928
 
 int recv_data(int fd, char *buf, int count, int log) {
-    uint8_t retv;
+    int8_t retv;
 
 //    TRACE_MSG(log);
 
@@ -23,7 +23,7 @@ int recv_data(int fd, char *buf, int count, int log) {
 }
 
 int send_data(int fd, char *buf, int count, int log) {
-    uint8_t retv;
+    int8_t retv;
 
     if ((retv = send(fd, buf, count, 0)) == -1)
         return -1;
@@ -215,7 +215,7 @@ void usage() {
 int main(int argc, char **argv) {
     struct connection conn;
     uint8_t n_args = argc - 1, log = 0;
-    uint16_t sock;
+    int16_t sock;
     uint32_t sockshost = 0x7f000001u;           // Hardcode localhost for now.
     char **arg;
     char *err_msg = malloc(255);
