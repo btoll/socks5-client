@@ -1,0 +1,16 @@
+Source: socks5-client
+Section: utils
+Priority: optional
+Maintainer: Benjamin Toll <ben@benjamintoll.com>
+Build-Depends: debhelper-compat (= 13), gcc
+Standards-Version: 4.5.1
+Homepage: https://benjamintoll.com
+#Vcs-Browser: https://salsa.debian.org/debian/socks5-client
+#Vcs-Git: https://salsa.debian.org/debian/socks5-client.git
+Rules-Requires-Root: no
+
+Package: socks5-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Send DNS queries to any SOCKS server
+ Make espresso and yuk it up.

@@ -16,5 +16,5 @@ clean:
 # https://www.gnu.org/software/make/manual/html_node/DESTDIR.html
 install:
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	install -m 0755 $(TARGET) $(DESTDIR)$(PREFIX)/bin/
+	install -m 0755 socks5-client $(DESTDIR)$(PREFIX)/bin/
 
